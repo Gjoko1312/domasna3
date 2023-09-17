@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import { Comments } from "./components/Coments";
+
 
 function App() {
+  let comments = [
+    { postId: "a2o", author: "Ѓоко", text: "Здраво дечки" },
+    { postId: "a2a", author: "Владе", text: "Многу добра статија" },
+    { postId: "b4r", author: "Славица", text: "Hi there!" },
+  ];
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1> Hello from domasna3</h1>
+
+      <Comments comments={comments} /> 
     </div>
   );
 }
